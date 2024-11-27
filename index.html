@@ -1,34 +1,36 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meu Portfólio</title>
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <header>
+    <h1>Bem-vindo ao meu portfólio</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
+        <li><a href="sobre.html"><i class="fas fa-user"></i> Sobre</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <section id="hero">
-    <button id="change-color">Mudar Cor</button>
+      <button id="change-color">Mudar Cor</button>
     </section>
     <section id="projects">
       <h2>Meus Projetos</h2>
       <div class="grid">
         <div class="card">
           <h3>Projeto 1</h3>
-          <p>Criacao do Aurora, um projeto que visa iluminar uma rua de noite, com fitas de LED RGB que aumentam sua intensidade da luz a medida que a pessoa vai correndo.</p>
+          <p>Criação do Aurora, um projeto que visa iluminar uma rua à noite, com fitas de LED RGB que aumentam sua intensidade de luz à medida que a pessoa vai correndo.</p>
         </div>
         <div class="card">
           <h3>Projeto 2</h3>
-          <p>Execucao do Aurora, para a TechDesign e SR2, concluindo alguns erros e colocando o projeto em pratica.</p>
+          <p>Desenvolvemos um projeto em código chamado CRUD, que funciona como uma espécie de agenda personalizada para o usuário. Ele permite armazenar e listar treinos de corrida, ajudando a planejar e acompanhar os treinos e metas de forma prática e organizada.</p>
         </div>
       </div>
     </section>
@@ -37,16 +39,17 @@
       <p>Se você quiser entrar em contato comigo, preencha o formulário abaixo:</p>
       <form action="https://formspree.io/f/your-form-id" method="POST">
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
+        <input type="text" id="nome" name="nome" required placeholder="Seu nome">
   
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" required placeholder="Seu email">
   
         <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Sua mensagem"></textarea>
   
-        <button type="submit">Enviar</button>
+        <button type="submit" class="btn-enviar">Enviar</button>
       </form>
+    </section>
   </main>
   <footer>
     <p>&copy; 2024, CAIO LEIMIG RODRIGUES DA SILVA</p>
