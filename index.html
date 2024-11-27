@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="hero">
+      <h1>Bem-vindo ao meu Portfólio</h1>
+      <img src="minhafoto.jpg" alt="Minha foto" id="profile-photo">
+    <button id="change-color">Mudar Cor</button>
+    </section>
+    <section id="projects">
+      <h2>Meus Projetos</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Projeto 1</h3>
+          <p>Criacao do Aurora, um projeto que visa iluminar uma rua de noite, com fitas de LED RGB que aumentam sua intensidade da luz a medida que a pessoa vai correndo.</p>
+        </div>
+        <div class="card">
+          <h3>Projeto 2</h3>
+          <p>Execucao do Aurora, para a TechDesign e SR2, concluindo alguns erros e colocando o projeto em pratica.</p>
+        </div>
+      </div>
+    </section>
+    <section class="contato">
+      <h2>Contato</h2>
+      <p>Se você quiser entrar em contato comigo, preencha o formulário abaixo:</p>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+  
+        <button type="submit">Enviar</button>
+      </form>
+  </main>
+  <footer>
+    <p>&copy; 2024, CAIO LEIMIG RODRIGUES DA SILVA</p>
+  </footer>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
